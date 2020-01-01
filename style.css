@@ -1,0 +1,155 @@
+body {
+    font : 15px/24px Georgia, "Times New Roman", Times, serif;
+    color : #666;
+    background : rgb(181, 223, 243);
+    margin : 0;
+    padding : 0;
+}
+
+abbr {
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgb(184, 184, 255);
+}
+
+h1,h2,h3 {
+    font-size: 20px;
+}
+
+p {
+    padding-left: 40px;
+    padding-right: 90px;
+    margin-bottom: 15px;
+    line-height: 32px;
+    font-style: italic;
+}
+
+.page-wrapper {
+    position : relative;
+    margin-left: 300px;
+    text-align : left;
+    background : url(img/container-bg.jpg) center top;
+    width : 750px;
+    background-size: 100% 100%;
+}
+
+header {
+    margin: 10px -300px 20px -30px;
+    background : url("img/header.jfif");
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+header h2 {
+    text-align: left;
+    padding-left: 15px;
+}
+
+header h1 {
+    font-size: 60px;
+    padding-top: 140px;
+    padding-left: 15px;
+    color: rgb(187, 99, 99);
+}
+
+.summary p:first-child{
+    position : absolute;
+    top : 10px;
+    left : -20px;
+    font-weight : bold;
+    color : rgb(119, 133, 113);
+    width : 550px;
+}
+
+.preamble {
+    margin: 30px 120px 50px 40px;
+    width: 600px;
+    padding: 10px;
+    border: 7px double brown;
+    border-radius: 3px;
+}
+
+.preamble p {
+    padding-right: 20px;
+}
+
+.explanation, .participation, .benefits, .requirements {
+    border-bottom : 1.5px solid #E4E1DB;
+    padding-bottom : 25pt;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    height: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #8c9b6f;
+    margin-left: 30px;
+}
+
+.preamble h3 {
+    width: 300px;
+}
+
+.explanation h3 {
+    width: 250px;
+}
+
+.participation h3 {
+    width: 150px;
+}
+
+.benefits h3 {
+    width: 90px;
+}
+
+.requirements h3 {
+    width: 150px;
+}
+
+footer {
+    height: 60px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sidebar {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    position : absolute;
+    top : 300px;
+    left : 750px;
+    width : 138px;
+}
+
+.wrapper {
+    width: 280px;
+    height: 800px;
+    background-color: rgb(221, 221, 221);
+    padding-top: 25px;
+}
+
+.sidebar .wrapper h3 {
+    color: white;
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display : block;
+    height: 26px;
+}
+
+.sidebar a.design-name, .sidebar a.design-name:link, .sidebar a.design-name:visited, .sidebar a.design-name:hover, .sidebar a.design-name:active, .sidebar a.design-name:focus {
+    font-weight : bold;
+    color : rgb(0, 190, 79);
+}
+
+.sidebar a.designer-name, .sidebar a.designer-name:link, .sidebar a.designer-name:visited, .sidebar a.designer-name:hover, .sidebar a.designer-name:active, .sidebar a.designer-name:focus {
+    font-weight: normal;
+    color: grey;
+}

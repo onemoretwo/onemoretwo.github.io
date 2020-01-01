@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="s-style.css">
+</head>
+<body>
+<div class="page-wrapper container-fluid">
+
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="test.html">my best friend</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="index.html">CSS Zen Garden</a>
+        </li>
+    </ul>
+
+    <header>
+        <h1 class="display-2">CSS specificity</h1>
+        <h2>เรียนรู้และทำความเข้าใจ เกี่ยวกับ CSS specificity</h2>
+    </header>
+
+    <div class="container-fluid">
+        <h3>CSS specificity คืออะไร?</h3>
+        <p>CSS specificity คือคอนเซปสำหรับการเลือก selector ไปใช้งานโดยเลือกจาก css selector ที่มี "ค่าหลัง" มากที่สุดมาใช้กับ element บนหน้า website</p>
+        <p>ความพิเศษของ CSS คือ Selector ที่แตกต่างกันแต่ละ Selector จะมี “ค่าพลัง” ไม่เหมือนกัน และเมื่อไหร่ที่ “ค่าพลัง” ต่างกัน ลำดับการเขียนโค้ดจะไม่มีผลทันที โดย selector ที่มีค่าพลังมากกว่าจะถูกนำไปใช้มน element นั้นๆ</p>
+    </div>
+
+    <div class="whatex">
+        <h5>ตัวอย่างคอนเซป CSS specificity</h5>
+        <p>HTML:</p>
+        <p><br>< div class="box" id="redbox" ><div></p>
+        <p><br>CSS:</p>
+        <p>#redbox { background: red; } /* ให้ #redbox พื้นหลังสีแดง */</p>
+        <p><br>.box { background: white; } /* ให้ .box พื้นหลังสีขาว */</p>
+        <p>จากตัวอย่าง ผลลัพธ์ที่ออกมา จะได้element ที่เป็นสีแดง</p>
+    <p>ยิ่ง selector นั้นมีการเจาะจงมากเท่าไหร่ก็ยิ่งมีค่าพลังมากโดยจากตัวอย่าง #redbox มีค่าพลัง 100 และ .box มีค่าพลัง 10 ดังนั้น selector ที่ถูกนำมาใช้งานจะเป็น #redbox</p>
+    </div>
+
+    <div class="้how">
+        <h3>การคำนวณค่า CSS specificity</h3>
+        <p>เราสามารถคำนวณตามกฎง่ายๆได้ดังนี้</p>
+        <p>1. ถ้าเขียน css ใส่ใน style เลยเช่น < a style="color: red">: <strong>+1000 คะแนน</strong></p>
+        <p>2. ใส่ 1 ID: <strong>+100 คะแนน</strong></p>
+        <p>3. ใส่ 1 class: <strong>+10 คะแนน</strong></p>
+        <p>4. ใส่ 1 element(แท็ก HTML ต่างๆ): <strong>+1คะแนน</strong></p>
+        <p><br>กรณีที่ค่า CSS specificity มีค่าเท่ากันจะเลือก selector ที่อยู่ด้านล่างสุดไปใช้งาน</p>
+    </div>
+
+    <div class="ex">
+        <h3>ตัวอย่างการใช้งาน specificity</h3>
+        <p>1. div h1 a span{   }</p>
+        <p>2. .page h1 a{    }</p>
+        <p><br>จากตัวอย่าง ข้อแรกมีค่า CSS specificity เท่ากับ 4 ส่วนข้อ2 มีค่าเท่ากับ 12 ถ้าเราเขียน < a href="index.html"> จะใช้ selector ในข้อที่ 2 เนื่องจากมีค่า CSS specificity ที่มากกว่า</a></p>
+    </div>
+</div>
+</body>
+</html>
