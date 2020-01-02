@@ -8,3 +8,24 @@ a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
+
+p {
+    padding-left: 15px;
+}
+
+
+body {
+    font : 15px/24px Georgia, "Times New Roman", Times, serif;
+    color : #666;
+    background : rgb(189, 189, 189);
+    margin : 0;
+    padding : 0;
+}
+
+.page-wrapper {
+    position : relative;
+    margin: 50px auto;
+    text-align : left;
+    background-color: white;
+    width : 750px;
+}
