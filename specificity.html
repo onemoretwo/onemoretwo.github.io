@@ -5,44 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="s-style.css">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active " style="color: white;" href="index.html">CSS Zen Garden <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" style="color: white;" href="test.html">My best friend</a>
+            <a class="nav-item nav-link active" target="_blank" style="color: white;" href="https://www.designil.com/css-specificity-and-hack.html">อ้างอิง</a>
+          </div>
+        </div>
+      </nav>
+
 <div class="page-wrapper container-fluid">
 
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" href="test.html">my best friend</a>
-        </li>
-        <li class="nav-item">
-           <a class="nav-link" href="index.html">CSS Zen Garden</a>
-        </li>
-    </ul>
-
     <header>
-        <h1 class="display-2">CSS specificity</h1>
-        <h2>เรียนรู้และทำความเข้าใจ เกี่ยวกับ CSS specificity</h2>
+        <h1 class="display-3" style="text-align: center;margin-bottom: 30px;">CSS specificity</h1>
+        <h2 style="margin-bottom: 30px;">เรียนรู้และทำความเข้าใจ เกี่ยวกับ CSS specificity</h2>
     </header>
 
-    <div class="container-fluid">
+    <div class="p-3 mb-2 bg-secondary text-white">
         <h3>CSS specificity คืออะไร?</h3>
         <p>CSS specificity คือคอนเซปสำหรับการเลือก selector ไปใช้งานโดยเลือกจาก css selector ที่มี "ค่าหลัง" มากที่สุดมาใช้กับ element บนหน้า website</p>
         <p>ความพิเศษของ CSS คือ Selector ที่แตกต่างกันแต่ละ Selector จะมี “ค่าพลัง” ไม่เหมือนกัน และเมื่อไหร่ที่ “ค่าพลัง” ต่างกัน ลำดับการเขียนโค้ดจะไม่มีผลทันที โดย selector ที่มีค่าพลังมากกว่าจะถูกนำไปใช้มน element นั้นๆ</p>
     </div>
 
-    <div class="whatex">
-        <h5>ตัวอย่างคอนเซป CSS specificity</h5>
-        <p>HTML:</p>
-        <p><br>< div class="box" id="redbox" ><div></p>
-        <p><br>CSS:</p>
-        <p>#redbox { background: red; } /* ให้ #redbox พื้นหลังสีแดง */</p>
-        <p><br>.box { background: white; } /* ให้ .box พื้นหลังสีขาว */</p>
-        <p>จากตัวอย่าง ผลลัพธ์ที่ออกมา จะได้element ที่เป็นสีแดง</p>
+    <div class="whatex" style="margin-top: 30px;">
+        <h5 style="margin-bottom: 30px;">ตัวอย่างคอนเซป CSS specificity</h5>
+        <div style="border: 7px double brown;width: 600px;margin-left: 70px;margin-bottom: 30px;">
+            <p>HTML:</p>
+            <p><br>< div class="box" id="redbox" ><div></p>
+            <p><br>CSS:</p>
+            <p>#redbox { background: red; } /* ให้ #redbox พื้นหลังสีแดง */</p>
+            <p><br>.box { background: white; } /* ให้ .box พื้นหลังสีขาว */</p>
+        </div>
+        <p><br>จากตัวอย่าง ผลลัพธ์ที่ออกมา จะได้element ที่เป็นสีแดง</p>
     <p>ยิ่ง selector นั้นมีการเจาะจงมากเท่าไหร่ก็ยิ่งมีค่าพลังมากโดยจากตัวอย่าง #redbox มีค่าพลัง 100 และ .box มีค่าพลัง 10 ดังนั้น selector ที่ถูกนำมาใช้งานจะเป็น #redbox</p>
     </div>
 
-    <div class="้how">
+    <div class="้shadow p-3 mb-5 bg-white rounded">
         <h3>การคำนวณค่า CSS specificity</h3>
         <p>เราสามารถคำนวณตามกฎง่ายๆได้ดังนี้</p>
         <p>1. ถ้าเขียน css ใส่ใน style เลยเช่น < a style="color: red">: <strong>+1000 คะแนน</strong></p>
