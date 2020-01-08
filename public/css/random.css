@@ -1,0 +1,12 @@
+.column {
+    padding: 50px 40px 0 60px;
+    border-left: 3px groove black;
+    border-right: 3px groove black;
+}
+
+.location {
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+

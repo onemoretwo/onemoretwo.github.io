@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gift random</title>
+    <link rel="stylesheet" href="public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/random.css">
+</head>
+<body style="background-color: rgb(174, 223, 255);">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 50px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" style="color: white;" href="index.html">CSS Zen Garden <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" style="color: white;" href="test.html">My best friend</a>
+            <a class="nav-item nav-link active" style="color: white;" href="specificity.html">CSS specificity</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container p-3 my-3 bg-dark text-white">
+        <h1 class="display-1">GIFT RANDOM PARTY!!</h1>
+        <P>random gift with first Javascript</P>
+    </div>
+    <div class="row location">
+        <div class="col-md-4 column">
+            <h1 class="display-4">Join our party</h1>
+            <p style="font-size: 20px;">if you have gifts, please check on the box</p>
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input id="name" type="text" class="form-control" placeholder="enter your name">
+                <input id="gift" type="checkbox" class="form-check-input">I have a gift for party!
+            </div>
+            <button id="submit" class="btn btn-success">submit</button>
+        </div>
+        <div class="col-md-4 column">
+            <h1 class="display-4" style="margin-bottom: 40px;">Participants</h1>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gift</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body" class="table-light">
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="col-md-4 column">
+            <h1 class="display-4">RANDOM GIFT</h1>
+            <p>press the button to random gift:
+                <button id="random" class="btn btn-primary" type="submit">Random</button>
+            </p>
+
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gift</th>
+                    </tr>
+                </thead>
+                <tbody id="random-body" class="table-light">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <hr style="margin-top: 50px;">
+        <address style="text-align: center;">
+            Written by Arnon Suksiri.<br>
+            Student ID : 6110450472<br>
+            Course: Web Tech
+        </address>
+    <script src="public/js/random.js"></script>
+</body>
+</html>
