@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/random.css">
 </head>
-<body style="background-color: rgb(174, 223, 255);">
+<body style="background-color: rgb(157, 255, 186);">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 50px;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,15 +19,21 @@
             <a class="nav-item nav-link active" style="color: white;" href="index.html">CSS Zen Garden <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link active" style="color: white;" href="test.html">My best friend</a>
             <a class="nav-item nav-link active" style="color: white;" href="specificity.html">CSS specificity</a>
-            <a class="nav-item nav-link active" style="color: white;" href="randomjq.html">Party(JQuery)</a>
+            <a class="nav-item nav-link active" style="color: white;" href="random.html">Party(JS)</a>
+
           </div>
         </div>
       </nav>
 
-    <div class="container p-3 my-3 bg-dark text-white">
+    <div class="container p-3 my-3 bg-dark text-white head" style="display: none;">
         <h1 class="display-1">GIFT RANDOM PARTY!!</h1>
-        <P>random gift with first Javascript</P>
+        <P>random gift with first JQuery version</P>
     </div>
+
+    <div>
+        <h1 class="container display-3" style="display: none;">JQuery Style</h1>
+    </div>
+
     <div class="row location">
         <div class="col-md-4 column">
             <h1 class="display-4">Join our party</h1>
@@ -40,9 +46,9 @@
             <button id="submit" class="btn btn-success">submit</button>
         </div>
         <div class="col-md-4 column">
-            <h1 class="display-4" style="margin-bottom: 40px;">Participants</h1>
+            <h1 class="display-4" style="margin-bottom: 15px;">Participants</h1>
 
-            <table class="table">
+            <table class="table animat">
                 <thead class="thead-dark">
                     <tr>
                         <th>Name</th>
@@ -82,6 +88,7 @@
             Student ID : 6110450472<br>
             Course: Web Tech
         </address>
-    <script src="public/js/random.js"></script>
+    <script src="public/js/jquery-3.4.1.min.js"></script>
+    <script src="public/js/randomjq.js"></script>
 </body>
 </html>
